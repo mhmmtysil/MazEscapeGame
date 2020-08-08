@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 7814685622664821503}
   - component: {fileID: 4735129381349432382}
   - component: {fileID: 1086049889302226537}
-  - component: {fileID: 2182225225395573269}
   m_Layer: 0
   m_Name: M
   m_TagString: Letters
@@ -94,6 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7a2063601fc2e441a636aa7911ee9fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  turnSpeed: 200
   index: 0
 --- !u!64 &1086049889302226537
 MeshCollider:
@@ -109,22 +109,3 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 6686097678407549244, guid: 4ca9bcda1b4e75146839b3df7ed33a07, type: 3}
---- !u!95 &2182225225395573269
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8381059439550778915}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 688e18862ef8a804fac332856263dbce, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
