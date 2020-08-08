@@ -63,8 +63,9 @@ public class FpsController : MonoBehaviour
     void Movement()
     {
         //Change our characters velocity in this direction
-        rb.velocity = transform.forward * (joystick.InRect ? 1 : 0) * speed; //+ transform.right * joystick.Horizontal * speed + transform.up * rb.velocity.y;
+        rb.velocity = transform.forward * joystick.Vertical * speed + transform.right * joystick.Horizontal * speed + transform.up * rb.velocity.y;
         rb.velocity = Vector3.ClampMagnitude(rb.velocity, walkSpeed);
+        
         speed = walkSpeed;
     }
 }

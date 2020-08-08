@@ -148,6 +148,8 @@ public class GameConfiguration : MonoBehaviour
             lettersPrefabs.Add(obj2);
             // GameObject field end
         }
+
+        Paused = false;
     }
 
     void Awake()
@@ -184,10 +186,15 @@ public class GameConfiguration : MonoBehaviour
     } 
     public void StageCompleted()
     {
+        Paused = true;
         SoundConfiguration.Instance.PlayEndStageSound();
         ingame.SetActive(false);
         GameOver.SetActive(false);
         NextCanvas.SetActive(true);
+        if(levelNow + 1 > 49)
+        {
+            levelNow = 0;
+        }
 
         txtAnswer.text = "Correct !The Answer is :" + words[levelNow].Name + "\n" + words[levelNow].Description;
     }
@@ -220,16 +227,5 @@ public class GameConfiguration : MonoBehaviour
     public void MainMenu()
     {
         SceneManager.LoadScene("Mainmenu");
-    }
-    public void LastLevelOpen()
-    {
-        
-    }
-   
-    public static void PlayVoice() {
-        AudioListener.volume = 1f;
-    }
-    public static void Mute() {
-        AudioListener.volume = 0f;
     }
 }

@@ -22,11 +22,19 @@ public class LoadingScreen : MonoBehaviour
         slider.value = defaultTimer - timer;
         if (timer <= 0) {
             gameObject.SetActive(false);
+            if (GameConfiguration.Instance != null)
+            {
+                GameConfiguration.Instance.Paused = false;
+            }
         }
     }
     void OnEnable()
     {
         timer = 1.5f;
+        if(GameConfiguration.Instance != null)
+        {
+            GameConfiguration.Instance.Paused = true;
+        }
     }
     public void WhenLoad() 
     {
