@@ -1,7 +1,22 @@
 fileFormatVersion: 2
-guid: 8368009d4c6256a47b392e0f36ee337c
+guid: 1efc6f8889e8b614ea98d33c89f31f8b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7866385140471301522
+    second: gamepaused_0
+  - first:
+      213: 5378706840330485132
+    second: gamepaused_1
+  - first:
+      213: 6615406686366749977
+    second: gamepaused_2
+  - first:
+      213: 6950646908741979259
+    second: gamepaused_3
+  - first:
+      213: -4125896763729771618
+    second: gamepaused_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -40,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -109,11 +124,32 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: gamepaused_0
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 737
+        width: 608
+        height: 314
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 295043c7b930b2d60800000000000000
+      internalID: 7866385140471301522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: f7bbbe0665461464c87f901b2340d3e7
     internalID: 0
     vertices: []
     indices: 

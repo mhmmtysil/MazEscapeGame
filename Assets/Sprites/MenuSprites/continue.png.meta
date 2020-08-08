@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 05635772b92398b49bd15d5e6a7c46c5
+guid: 6de8e83d2f669ff49aecb394e3455dbd
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3015710083530981091
-    second: maze
+      213: -7176300867611961145
+    second: continue_0
+  - first:
+      213: -1177875701502041260
+    second: continue_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: maze
+      name: continue_0
       rect:
         serializedVersion: 2
-        x: 675
-        y: 659
-        width: 342
-        height: 342
+        x: 810
+        y: 950
+        width: 300
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +131,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee7d62d754f9d920800000000000000
-      internalID: 3015710083530981091
+      spriteID: 7c859a0f168a86c90800000000000000
+      internalID: -7176300867611961145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: continue_1
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 950
+        width: 300
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45328664a4857afe0800000000000000
+      internalID: -1177875701502041260
       vertices: []
       indices: 
       edges: []
@@ -137,7 +161,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6749faf99f98b904db794235e7b3262d
+    spriteID: 6cd2891c922a87246aa418f1349b8468
     internalID: 0
     vertices: []
     indices: 

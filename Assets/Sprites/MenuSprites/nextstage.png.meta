@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: e0ff0f7018eb1204387571cdf3a9d4fb
+guid: cbd4a1208285bec4c8927731aa4360da
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4320295261928297051
-    second: logo_0
+      213: -3120597177591357531
+    second: nextstage_0
   - first:
-      213: 5470614613321624601
-    second: logo_1
+      213: 7105771361548377673
+    second: nextstage_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: logo_0
+      name: nextstage_0
       rect:
         serializedVersion: 2
-        x: 734
-        y: 724
-        width: 451
-        height: 330
+        x: 810
+        y: 950
+        width: 300
+        height: 130
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ade5f3695a3b04c0800000000000000
-      internalID: -4320295261928297051
+      spriteID: 5af949e866961b4d0800000000000000
+      internalID: -3120597177591357531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: nextstage_1
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 950
+        width: 300
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94e1c34c765cc9260800000000000000
+      internalID: 7105771361548377673
       vertices: []
       indices: 
       edges: []
@@ -140,7 +161,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 96f43d3b16bf2d542879bfc92d2091b8
+    spriteID: e5f61beed8322074ab29cbea5ad63bce
     internalID: 0
     vertices: []
     indices: 

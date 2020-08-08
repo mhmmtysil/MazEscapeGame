@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 2e0aac7e867321946a7a4860d14e9150
+guid: 90e7156fa3ae3c04192ebfd218900820
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4571828015118065507
-    second: back
+      213: -8469405890411266030
+    second: joystick slider_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -114,13 +114,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: back
+      name: joystick slider_0
       rect:
         serializedVersion: 2
-        x: 697
-        y: 797
-        width: 250
-        height: 200
+        x: 1015
+        y: 256
+        width: 500
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9065b094aa9d80c0800000000000000
-      internalID: -4571828015118065507
+      spriteID: 2108f6b2730a67a80800000000000000
+      internalID: -8469405890411266030
       vertices: []
       indices: 
       edges: []
@@ -137,7 +137,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 3786e3aadf377924da666f8d0ad79601
+    spriteID: 783918acddc1da046ae8d8ee7b52f719
     internalID: 0
     vertices: []
     indices: 
