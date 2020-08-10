@@ -17,12 +17,14 @@ public class FpsController : MonoBehaviour
     [HideInInspector]
     public Joystick joystick;
     public Vector3 startingPos;
+    private Animator anim;
     public void Initialize()
     {
         transform.position = startingPos;
     }
     void Start()
     {
+        anim = GetComponent<Animator>();
         joystick = GameObject.FindGameObjectWithTag("PlayerMover").GetComponent<Joystick>();
         startingPos = transform.position;
     }
@@ -40,14 +42,7 @@ public class FpsController : MonoBehaviour
             SoundConfiguration.Instance.PlaySpeedSound();
             collisionWith = c.gameObject;
             Destroy(collisionWith.gameObject);
-            walkSpeed += 5;
-        }
-       
-        if (c.CompareTag("Letters")) {
-            Destroy(c.gameObject);
-            GameConfiguration.Instance.letters[c.GetComponent<Solution>().index].SetActive(true);
-            StageController();
-            SoundConfiguration.Instance.PlayCollectSound();
+            walkSpeed += 1;
         }
 
     }
@@ -55,17 +50,25 @@ public class FpsController : MonoBehaviour
     public void StageController(){
         counter += 1;
         if (counter >= GameConfiguration.Instance.letters.Count) {
+            counter = 0;
             GameConfiguration.Instance.StageCompleted();
         }
-
-    
     }
     void Movement()
     {
         //Change our characters velocity in this direction
-        rb.velocity = transform.forward * joystick.Vertical * speed + transform.right * joystick.Horizontal * speed + transform.up * rb.velocity.y;
+        rb.velocity = new Vector3(joystick.Horizontal * speed, rb.velocity.y, joystick.Vertical * speed); //transform.forward * joystick.Vertical * speed + transform.right * joystick.Horizontal * speed + transform.up * rb.velocity.y;
         rb.velocity = Vector3.ClampMagnitude(rb.velocity, walkSpeed);
-        
+        if(joystick.InRect)
+            transform.eulerAngles = new Vector3(transform.eulerAngles.x, Mathf.Atan2(joystick.Horizontal, joystick.Vertical) * Mathf.Rad2Deg, transform.eulerAngles.z);
         speed = walkSpeed;
+        if(joystick.Horizontal != 0 || joystick.Vertical != 0)
+        {
+            anim.SetFloat("speed", 1);
+        }
+        else
+        {
+            anim.SetFloat("speed", 0);
+        }
     }
 }

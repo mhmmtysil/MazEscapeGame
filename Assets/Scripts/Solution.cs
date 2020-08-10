@@ -13,4 +13,17 @@ public class Solution : MonoBehaviour
     {
         transform.Rotate(Vector3.up, turnSpeed * Time.deltaTime);
     }
+    bool b = false;
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player") && !b)
+        {
+                GameConfiguration.Instance.letters[index].SetActive(true);
+                other.GetComponent<FpsController>().StageController();
+                SoundConfiguration.Instance.PlayCollectSound();
+                Debug.Log("Counter : ");
+                Destroy(gameObject);
+            b = true;
+        }
+    }
 }
